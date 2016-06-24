@@ -2,4 +2,20 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
     <h1>BowStat</h1>
         <h2>A place for bowyers to compile and compare bow performance and statistics</h2>
+        <br />
+        <%= link_to 'Add your stats', new_bow_path, class: 'btn btn-danger btn-lg' %>
 </div>
+<br />
+<br />
+<% @stats.each do |stats| %>
+    <div class="booyah-box col-xs-6 col-sm-4 col-xs-offset-1">
+        <i><%=stats.ttt_length %></i>
+        <i><%=stats.ntn_length %></i>
+        <i><%=stats.type %></i>
+        <i><%=stats.handle %></i>
+        <i><%=stats.draw_length_inches %></i>
+        <i><%=stats.draw_weight_pounds %></i>
+        <i><%=stats.arrow_speed_fps %></i>
+        <i><%=stats.wood_type %></i>
+    </div>
+<% end %>

@@ -1,7 +1,7 @@
 <br />
 <div class="booyah-box col-xs-10 col-xs-offset-1">
     <h1>Enter Your Stats</h1>
-        <%= simple_form_for @stats do |f| %>
+        <%= simple_form_for @stats, url: bows_path do |f| %>
             <%= f.input :ttt_length%>
             <%= f.input :ntn_length %>
             <%= f.input :type %>
@@ -12,4 +12,5 @@
             <%= f.input :wood_type %>
             <br />
             <%= f.submit 'Create', class: 'btn btn-primary' %>
-        </div>
+        <% end %>
+</div>
