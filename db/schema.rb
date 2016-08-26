@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160623195420) do
+ActiveRecord::Schema.define(version: 20160825202854) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 20160623195420) do
   create_table "stats", force: true do |t|
     t.integer  "ttt_length"
     t.integer  "ntn_length"
-    t.text     "type"
     t.text     "handle"
     t.integer  "draw_length_inches"
     t.integer  "draw_weight_pounds"
@@ -27,6 +26,8 @@ ActiveRecord::Schema.define(version: 20160623195420) do
     t.text     "wood_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "bow_type"
+    t.string   "backing"
   end
 
 end

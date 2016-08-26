@@ -4,12 +4,14 @@
         <%= simple_form_for @stats, url: bows_path do |f| %>
             <%= f.input :ttt_length%>
             <%= f.input :ntn_length %>
-            <%= f.input :type %>
+            <%= f.input :bow_type %>
             <%= f.input :handle %>
             <%= f.input :draw_length_inches %>
             <%= f.input :draw_weight_pounds %>
             <%= f.input :arrow_speed_fps %>
             <%= f.input :wood_type %>
+            <%= f.input :backing %></i>
+
             <br />
             <%= f.submit 'Create', class: 'btn btn-primary' %>
         <% end %>

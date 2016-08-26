@@ -15,7 +15,7 @@ class BowsController < ApplicationController
     private
 
     def stats_params
-        params.require(:stats).permit(:ttt_length, :ntn_length, :type, :handle, :draw_length_inches, :draw_weight_pounds, :arrow_speed_fps, :wood_type)
+        params.require(:stats).permit(:ttt_length, :ntn_length, :bow_type, :handle, :draw_length_inches, :draw_weight_pounds, :arrow_speed_fps, :wood_type, :backing)
     end
 
 end
