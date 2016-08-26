@@ -6,6 +6,7 @@ body {
         background-size:cover;
       }
 
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -15,7 +16,12 @@ body {
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
   margin-bottom: 15px;
-  padding: 20px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.booyah-box p{
+  margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,3 +30,4 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
   color: #1F6609;
 }
+
